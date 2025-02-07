@@ -4,16 +4,79 @@
     <meta charset="UTF-8">
     <!--Ini tag untuk responsive design-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temp Conversion</title>
 
     <!--Link CSS-->
-    <link rel="stylesheet" href="css\style.css"
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <header></header>
+    <header class="main-header">
+        <h1>Konversi Suhu</h1>
+    </header>
     <main>
+        <!-- Introduction -->
+        <section>
+            <p>Masukkan suhu derjat Celcius (&degC) ke kotak di bawah,
+                lalu klik tombol konversi untuk mendapatkan hasil konversi
+                dalam bentuk Fahrenheit (&degF)
+            </p>
+        </section>
+
+        <!-- Form Input suhu yang ingin di konversi -->
+
+        <section>
+            <form>
+                <div class="input-group">
+                    <label for="main-input">Celcius:</label>
+                    <input type="number" id="main-input">  
+                </div>  
+
+                <div class="button-group">
+                    <button class="bg-blue">Konversi</button>
+                    <button class="bg-gray">Reset</button>
+                    <button class="bg-green">Reverse</button>
+                    
+                </div>
+            </form>
+        </section>
+
+        <!-- Hasil Konversi -->
+
+        <section>
+            <div class="input-group">
+                <label for="main-result">Fahrenheit:</label>
+                <input type="text" id="main-result" readonly>  
+            </div>
+        </section>
+
+        <!-- Cara Konversi Suhu -->
+
+        <section>
+            <div class="input-group">
+                <label for="how-result">Cara Konversi:</label>
+                <input type="text" id="how-result" readonly> 
+            </div>
+
+        </section>
+
+        <!-- Penjelasan Rumus -->
+         <section>
+            <header>
+                <h3>Cara Konversi Celcius (&degC) ke Fahrenheit (&degF)</h3>
+            </header>
+
+            <hr>
+
+            <article>
+                <p>Suhu <span class="remark"> S </span> </p>
+                <p>S<sub>(&degF)</sub>=</p>
+            </article>
+         </section>
+
 
     </main>
-    <footer></footer>
+    <footer>
+    <p>Dewin 2025</p>
+    </footer>
 </body>
 </html>
