@@ -3,23 +3,27 @@
 
 body{
     font-family: monospace;
+    font-size: 16px;
+    background-color: #a6b1e1;
 }
 
 main {
-    max-width: 750px;
+    max-width: 700px;
     justify-self: center;
 
     /* Backgrpund Matter */
-    background-color: pink;
+    background-color: #424874;
     border-radius: 10px;
 }
 
 .main-header {
     text-align: center;
+    color: #2f3354
 }
 
 section {
     padding: 8px;
+    color: #f4f2fc;
 }
 
 .input-group {
@@ -29,21 +33,22 @@ section {
 
 input {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 8px 10px;
+    margin: 5px 0;
     box-sizing: border-box;
-    border: 3px solid #ccc;
+    border: 3px solid #9287d49a;
+    border-radius: 4px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
   }
   
   input[type=number]:focus {
-    border: 3px solid #555;
+    border: 3px solid #e3e2f0;
   }
 
 .button-group {
-    margin-top: 14px;
+    margin-top: 6px;
 }
 
 button {
@@ -53,21 +58,52 @@ button {
 }
 
 .bg-blue {
-    background-color: darkseagreen;
+    background-color: #c7ffff;
+    font-size: 15px;
+    font-family: monospace;
 }
 
 .bg-gray {
-    background-color: lightskyblue;
+    background-color: #87e0ff;
+    font-size: 15px;
+    font-family: monospace;
 }
 
 .bg-green {
-    background-color: yellow;
+    background-color: #53c7f0;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.cara-konver {
+    padding-top: 50px;
 }
 
 .remark {
     font-weight: bold;
     font-size: x-large;
 }
+
+#main-input {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#main-result {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#how-result {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+
 footer {
+    ont-weight: bold;
+    font-size: x-large;
+    padding-top: 50px;
     text-align: center;
+    color: white
 }

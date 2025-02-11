@@ -8,6 +8,9 @@
 
     <!--Link CSS-->
     <link rel="stylesheet" href="css\style.css">
+
+    <!-- Link JS -->
+     <script src="js\script.js"></script>
 </head>
 <body>
     <header class="main-header">
@@ -18,7 +21,7 @@
         <section>
             <p>Masukkan suhu derjat Celcius (&degC) ke kotak di bawah,
                 lalu klik tombol konversi untuk mendapatkan hasil konversi
-                dalam bentuk Fahrenheit (&degF)
+                dalam bentuk Fahrenheit (&degF).
             </p>
         </section>
 
@@ -27,14 +30,14 @@
         <section>
             <form>
                 <div class="input-group">
-                    <label for="main-input">Celcius:</label>
+                    <label for="main-input">Celcius (&degC):</label>
                     <input type="number" id="main-input">  
                 </div>  
 
                 <div class="button-group">
-                    <button class="bg-blue">Konversi</button>
-                    <button class="bg-gray">Reset</button>
-                    <button class="bg-green">Reverse</button>
+                    <button class="bg-blue" onclick="konversi(event)">Konversi</button>
+                    <button class="bg-gray" onclick="resetForm(event)">Reset</button>
+                    <button class="bg-green" onclick="reverse(event)">Reverse</button>
                     
                 </div>
             </form>
@@ -44,7 +47,7 @@
 
         <section>
             <div class="input-group">
-                <label for="main-result">Fahrenheit:</label>
+                <label for="main-result">Fahrenheit (&degF):</label>
                 <input type="text" id="main-result" readonly>  
             </div>
         </section>
@@ -52,31 +55,45 @@
         <!-- Cara Konversi Suhu -->
 
         <section>
-            <div class="input-group">
-                <label for="how-result">Cara Konversi:</label>
-                <input type="text" id="how-result" readonly> 
+            <div class="input-group" id="result">
+                <label for="how-result">Cara Kalkulasi:</label>
+                <input type="text" id="how-result" readonly>
+                 
             </div>
 
         </section>
 
+
+
+
+
+
         <!-- Penjelasan Rumus -->
-         <section>
+         <section class="cara-kalkulasi">
+
             <header>
-                <h3>Cara Konversi Celcius (&degC) ke Fahrenheit (&degF)</h3>
+                <h3><b>Cara Konversi Celcius (&degC) ke Fahrenheit (&degF)</b></h3>
             </header>
 
             <hr>
 
+
             <article>
-                <p>Suhu <span class="remark"> S </span> </p>
-                <p>S<sub>(&degF)</sub>=</p>
+                <p>Suhu <span class="remark"> S </span> dalam derajat Fahrenheit (&degF) 
+                    sama dengan suhu <span class="remark"> S </span> dalam derajat Celcius 
+                    (&degC) kali <span class="remark"> 9/5 </span> tambah <span class="remark"> 
+                        32</span>.</p> <br>
+
+                <p><span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> x <span class="remark"> 9/5</span>) + <span class="remark">32</span></p>
+                <p>atau</p>
+                <p><span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> x <span class="remark"> 1.8</span>) + <span class="remark">32</span></p>
             </article>
          </section>
 
 
     </main>
     <footer>
-    <p>Dewin 2025</p>
+    <p>Dewinta Retno Puspitasari 2025</p>
     </footer>
 </body>
 </html>
