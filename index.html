@@ -17,18 +17,6 @@
         <h1>Konverter Suhu</h1>
     </header>
     <main>
-        <!-- Introduction -->
-        <!-- <section>
-            <p>Masukkan suhu dalam derajat Celcius (&degC) ke kotak di bawah,
-                lalu klik tombol konversi untuk mendapatkan hasil konversi
-                dalam bentuk Fahrenheit (&degF).
-            </p>
-        </section> -->
-
-
-
-
-
 
 
         <!-- Form Input suhu yang ingin di konversi -->
@@ -36,22 +24,17 @@
         <section class="suhu">
             <form>
                 <div class="input-group">
-                    <label for="main-input" id="m-input">Celcius (&degC):</label>
+                    <label for="main-input" id="label-input">Celcius (&degC):</label>
                     <input type="number" id="main-input" placeholder="Input nilai suhu">
-                    
-  
                 </div>  
 
                 <div class="button-group">
                     <button class="bg-blue" type="button" onclick="konversi(event)">Konversi</button>
                     <button class="bg-gray" type="button" onclick="resetForm(event)">Reset</button>
-                    <button class="bg-green" type="button" onclick="reverse(event); swap(event);">Reverse</button>
+                    <button class="bg-green" type="button" onclick="reverse(event); swap(event)">Reverse</button>
                 </div>
             </form>
         </section>
-
-
-
 
 
 
@@ -59,15 +42,11 @@
 
         <section class="suhu">
             <div class="input-group">
-                <label for="main-result" id="m-result">Fahrenheit (&degF):</label>
+                <label for="main-result" id="label-result">Fahrenheit (&degF):</label>
                 <input type="text" id="main-result" readonly>  
             </div>
         </section>
     
-
-
-
-
 
 
         <!-- Cara Konversi Suhu -->
@@ -76,12 +55,8 @@
             <div class="input-group" id="kalkulasi">
                 <label for="how-result">Cara Kalkulasi:</label>
                 <input type="text" id="how-result" readonly>
-                 
             </div>
-
         </section>
-
-
 
 
 
@@ -93,54 +68,48 @@
 
 
         <!-- Penjelasan Rumus -->
+
          <section class="cara-kalkulasi">
 
             <header id="titel-penjelasan">
                 <h3><b>Cara Konversi Celcius (&degC) ke Fahrenheit (&degF)</b></h3>
             </header>
-
             <hr>
-
-
             <article id="penjelasanctof">
                 <p>Suhu <span class="remark"> S </span> dalam derajat Fahrenheit (&degF) 
                     sama dengan suhu <span class="remark"> S </span> dalam derajat Celcius 
                     (&degC) kali <span class="remark"> 9/5 </span> tambah <span class="remark"> 
                         32</span>.</p> 
 
-                <p id="rumus"><span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degC)</sub> x <span class="remark"> 9/5</span>) + <span class="remark">32</span></p>
+                <p id="rumus"> <span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degC)</sub> x <span class="remark"> 9/5</span>) + <span class="remark">32</span> </p>
                 <p id="rumus">atau</p>
-                <p id="rumus"><span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degC)</sub> x <span class="remark"> 1.8</span>) + <span class="remark">32</span></p>
+                <p id="rumus"> <span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degC)</sub> x <span class="remark"> 1.8</span>) + <span class="remark">32</span> </p>
             </article>
-
-            <br>
 
         </section>
 
-
+        <br>
 
         <section class="cara-kalkulasi">
             <header id="titel-penjelasan">
                 <h3><b>Cara Konversi Fahrenheit (&degF) ke Celsius (&degC)</b></h3>
             </header>
-<hr>
+            <hr>
             <article id="penjelasanftoc">
                 <p>Suhu <span class="remark"> S </span> dalam derajat Celcius (&degC) 
                     sama dengan suhu <span class="remark"> S </span> dalam derajat Fahrenheit 
                     (&degF) dikurangi <span class="remark">32</span> dikali <span class="remark"> 5/9 </span>.</p> 
 
-                <p id="rumus"><span class="remark"> S</span><sub>(&degC)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> - <span class="remark"> 32</span>) x <span class="remark">5/9</span></p>
+                <p id="rumus"> <span class="remark"> S</span><sub>(&degC)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> - <span class="remark"> 32</span>) x <span class="remark">5/9</span> </p>
                 <p id="rumus">atau</p>
-                <p id="rumus"><span class="remark"> S</span><sub>(&degC)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> - <span class="remark"> 32</span>) x <span class="remark">0.6</span></p>
+                <p id="rumus"> <span class="remark"> S</span><sub>(&degC)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> - <span class="remark"> 32</span>) x <span class="remark">0.6</span> </p>
             </article>
-
-
          </section>
 
 
     </main>
     <footer>
-    <p>Dewinta Retno Puspitasari 2025</p>
+    <p>by Dewinta Retno Puspitasari 2025</p>
     </footer>
 </body>
 </html>
