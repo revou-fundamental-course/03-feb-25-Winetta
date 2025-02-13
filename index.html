@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!--Ini tag untuk responsive design-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temp Conversion</title>
+    <title>Temp Conversion by DRP</title>
 
     <!--Link CSS-->
     <link rel="stylesheet" href="css\style.css">
@@ -14,48 +14,66 @@
 </head>
 <body>
     <header class="main-header">
-        <h1>Konversi Suhu</h1>
+        <h1>Konverter Suhu</h1>
     </header>
     <main>
         <!-- Introduction -->
-        <section>
-            <p>Masukkan suhu derjat Celcius (&degC) ke kotak di bawah,
+        <!-- <section>
+            <p>Masukkan suhu dalam derajat Celcius (&degC) ke kotak di bawah,
                 lalu klik tombol konversi untuk mendapatkan hasil konversi
                 dalam bentuk Fahrenheit (&degF).
             </p>
-        </section>
+        </section> -->
+
+
+
+
+
+
 
         <!-- Form Input suhu yang ingin di konversi -->
 
-        <section>
+        <section class="suhu">
             <form>
                 <div class="input-group">
-                    <label for="main-input">Celcius (&degC):</label>
-                    <input type="number" id="main-input">  
+                    <label for="main-input" id="m-input">Celcius (&degC):</label>
+                    <input type="number" id="main-input" placeholder="Input nilai suhu">
+                    
+  
                 </div>  
 
                 <div class="button-group">
-                    <button class="bg-blue" onclick="konversi(event)">Konversi</button>
-                    <button class="bg-gray" onclick="resetForm(event)">Reset</button>
-                    <button class="bg-green" onclick="reverse(event)">Reverse</button>
-                    
+                    <button class="bg-blue" type="button" onclick="konversi(event)">Konversi</button>
+                    <button class="bg-gray" type="button" onclick="resetForm(event)">Reset</button>
+                    <button class="bg-green" type="button" onclick="reverse(event); swap(event);">Reverse</button>
                 </div>
             </form>
         </section>
 
+
+
+
+
+
         <!-- Hasil Konversi -->
 
-        <section>
+        <section class="suhu">
             <div class="input-group">
-                <label for="main-result">Fahrenheit (&degF):</label>
+                <label for="main-result" id="m-result">Fahrenheit (&degF):</label>
                 <input type="text" id="main-result" readonly>  
             </div>
         </section>
+    
+
+
+
+
+
 
         <!-- Cara Konversi Suhu -->
 
         <section>
-            <div class="input-group" id="result">
+            <div class="input-group" id="kalkulasi">
                 <label for="how-result">Cara Kalkulasi:</label>
                 <input type="text" id="how-result" readonly>
                  
@@ -68,26 +86,55 @@
 
 
 
+<br>
+
+
+
+
+
         <!-- Penjelasan Rumus -->
          <section class="cara-kalkulasi">
 
-            <header>
+            <header id="titel-penjelasan">
                 <h3><b>Cara Konversi Celcius (&degC) ke Fahrenheit (&degF)</b></h3>
             </header>
 
             <hr>
 
 
-            <article>
+            <article id="penjelasanctof">
                 <p>Suhu <span class="remark"> S </span> dalam derajat Fahrenheit (&degF) 
                     sama dengan suhu <span class="remark"> S </span> dalam derajat Celcius 
                     (&degC) kali <span class="remark"> 9/5 </span> tambah <span class="remark"> 
-                        32</span>.</p> <br>
+                        32</span>.</p> 
 
-                <p><span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> x <span class="remark"> 9/5</span>) + <span class="remark">32</span></p>
-                <p>atau</p>
-                <p><span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> x <span class="remark"> 1.8</span>) + <span class="remark">32</span></p>
+                <p id="rumus"><span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degC)</sub> x <span class="remark"> 9/5</span>) + <span class="remark">32</span></p>
+                <p id="rumus">atau</p>
+                <p id="rumus"><span class="remark"> S</span><sub>(&degF)</sub>= (<span class="remark">S</span><sub>(&degC)</sub> x <span class="remark"> 1.8</span>) + <span class="remark">32</span></p>
             </article>
+
+            <br>
+
+        </section>
+
+
+
+        <section class="cara-kalkulasi">
+            <header id="titel-penjelasan">
+                <h3><b>Cara Konversi Fahrenheit (&degF) ke Celsius (&degC)</b></h3>
+            </header>
+<hr>
+            <article id="penjelasanftoc">
+                <p>Suhu <span class="remark"> S </span> dalam derajat Celcius (&degC) 
+                    sama dengan suhu <span class="remark"> S </span> dalam derajat Fahrenheit 
+                    (&degF) dikurangi <span class="remark">32</span> dikali <span class="remark"> 5/9 </span>.</p> 
+
+                <p id="rumus"><span class="remark"> S</span><sub>(&degC)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> - <span class="remark"> 32</span>) x <span class="remark">5/9</span></p>
+                <p id="rumus">atau</p>
+                <p id="rumus"><span class="remark"> S</span><sub>(&degC)</sub>= (<span class="remark">S</span><sub>(&degF)</sub> - <span class="remark"> 32</span>) x <span class="remark">0.6</span></p>
+            </article>
+
+
          </section>
 
 
